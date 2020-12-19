@@ -61,7 +61,7 @@ namespace GetcuReone.MvvmFrame.Wpf.TestAdapter
                     Assert.IsTrue(nResult.IsNavigate, "Navigation failed.");
                     return viewModel;
                 })
-                .AndWait(100)
+                .AndWait(500)
                 .And("Setup view-model.", viewModel => 
                 {
                     SetupViewModel(viewModel);
