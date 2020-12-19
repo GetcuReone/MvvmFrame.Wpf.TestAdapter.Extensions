@@ -1,0 +1,1 @@
+# MvvmFrame.Wpf.TestAdapter.Extensions
