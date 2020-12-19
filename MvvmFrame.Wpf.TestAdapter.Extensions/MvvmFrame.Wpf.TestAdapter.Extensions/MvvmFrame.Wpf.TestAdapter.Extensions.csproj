@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <RootNamespace>GetcuReone.MvvmFrame.Wpf.TestAdapter</RootNamespace>
+        <DocumentationFile>MvvmFrame.Wpf.TestAdapter.Extensions.xml</DocumentationFile>
+
+        <Authors>Itua Juel-Gaben</Authors>
+        <PackageId>MvvmFrameWpf.TestAdapter.Extensions</PackageId>
+        <Product>MvvmFrameWpf.TestAdapter.Extensions</Product>
+        <Description>Extensions for MvvmFrameWpf.TestAdapter</Description>
+        <RepositoryUrl>https://github.com/GetcuReone/MvvmFrame.Wpf.TestAdapter.Extensions</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>getcureone combopatterns mvvm wpf mvvmwpf test</PackageTags>
+        <PackageReleaseNotes></PackageReleaseNotes>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageProjectUrl>https://github.com/GetcuReone/MvvmFrame.Wpf.TestAdapter.Extensions</PackageProjectUrl>
+        <Copyright>Copyright © 2020 $(Authors)</Copyright>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>$(snkFilePath)</AssemblyOriginatorKeyFile>
+        <DelaySign>false</DelaySign>
+        <AssemblyVersion>$(majorVersion).$(minorVersion).0.0</AssemblyVersion>
+        <FileVersion>$(majorVersion).$(minorVersion).0.0</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Empty\EmptyPage.xaml" />
+      <None Remove="TestWindow.xaml" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+        <None Include="..\..\README.md">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MvvmFrameWpf.TestAdapter" Version="[2.5.0,)" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Include="Empty\EmptyPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Include="Window\TestWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+
+</Project>
