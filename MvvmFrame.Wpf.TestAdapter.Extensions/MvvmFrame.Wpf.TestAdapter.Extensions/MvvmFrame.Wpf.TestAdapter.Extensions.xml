@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MvvmFrame.Wpf.TestAdapter.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:GetcuReone.MvvmFrame.Wpf.TestAdapter.Empty.EmptyPage">
+            <summary>
+            Interaction logic for EmptyPage.xaml
+            </summary>
+            <summary>
+            EmptyPage
+            </summary>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.Empty.EmptyPage.InitializePageComponent``1(``0)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.Empty.EmptyPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:GetcuReone.MvvmFrame.Wpf.TestAdapter.Empty.EmptyViewModel">
+            <summary>
+            Empty view-model.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.Empty.EmptyViewModel.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.Empty.EmptyViewModel.OnGoPageAsync(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.Empty.EmptyViewModel.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.Empty.EmptyViewModel.OnLoadPageAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.MvvmFrame.Wpf.TestAdapter.TestWindowHelper">
+            <summary>
+            Helper for <see cref="T:GetcuReone.MvvmFrame.Wpf.TestAdapter.TestWindow"/>.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.TestWindowHelper.RunTestWindow``2(GetcuReone.MvvmFrame.Wpf.TestAdapter.Entities.ThenBlock{``0,``1},System.Int32)">
+            <summary>
+            Run <see cref="T:GetcuReone.MvvmFrame.Wpf.TestAdapter.TestWindow"/>.
+            </summary>
+            <typeparam name="TIn"></typeparam>
+            <typeparam name="TOut"></typeparam>
+            <param name="thenBlock"></param>
+            <param name="timeout"></param>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.TestWindowHelper.RunTestWindow``2(GetcuReone.MvvmFrame.Wpf.TestAdapter.Entities.ThenAsyncBlock{``0,``1},System.Int32)">
+            <summary>
+            Run <see cref="T:GetcuReone.MvvmFrame.Wpf.TestAdapter.TestWindow"/>.
+            </summary>
+            <typeparam name="TIn"></typeparam>
+            <typeparam name="TOut"></typeparam>
+            <param name="thenBlock"></param>
+            <param name="timeout"></param>
+        </member>
+        <member name="T:GetcuReone.MvvmFrame.Wpf.TestAdapter.UiTestBase">
+            <summary>
+            Base class for testing UI.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.MvvmFrame.Wpf.TestAdapter.UiTestBase.SubFrameName">
+            <summary>
+            Name sub frame.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.UiTestBase.SetupViewModel``1(``0)">
+            <summary>
+            Setup veiw-model.
+            </summary>
+            <typeparam name="TViewModel"></typeparam>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.UiTestBase.GetSubFrame">
+            <summary>
+            Get sub frame.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.UiTestBase.CheckTypeAndGetPageSubFrame``1">
+            <summary>
+            Check type and get page.
+            </summary>
+            <typeparam name="TPage"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.UiTestBase.GivenShowEmptyPage">
+            <summary>
+            Return given block 'Create and show <see cref="T:GetcuReone.MvvmFrame.Wpf.TestAdapter.Empty.EmptyViewModel"/>'.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GetcuReone.MvvmFrame.Wpf.TestAdapter.UiTestHelper">
+            <summary>
+            Helper for UI test.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.UiTestHelper.CheckTypeAndDataContext``1(System.Windows.Controls.Page)">
+            <summary>
+            Check type and get data context.
+            </summary>
+            <typeparam name="TDataContext"></typeparam>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GetcuReone.MvvmFrame.Wpf.TestAdapter.TestWindow">
+            <summary>
+            Interaction logic for TestWindow.xaml
+            </summary>
+            <summary>
+            TestWindow
+            </summary>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.TestWindow.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.MvvmFrame.Wpf.TestAdapter.TestWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
