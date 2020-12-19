@@ -44,7 +44,6 @@ namespace GetcuReone.MvvmFrame.Wpf.TestAdapter
         protected virtual TPage CheckTypeAndGetPageSubFrame<TPage>() where TPage : Page
         {
             var subFrmae = GetSubFrame();
-
             Assert.IsTrue(subFrmae.Content is TPage page, $"subFrame not containe {typeof(TPage).Name}");
             return subFrmae.Content as TPage;
         }
