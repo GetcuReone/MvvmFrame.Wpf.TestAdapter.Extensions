@@ -44,7 +44,7 @@ namespace GetcuReone.MvvmFrame.Wpf.TestAdapter
         protected virtual TPage CheckTypeAndGetPageSubFrame<TPage>() where TPage : Page
         {
             var subFrmae = GetSubFrame();
-            Assert.IsTrue(subFrmae.Content is TPage page, $"subFrame not containe {typeof(TPage).Name}");
+            Assert.IsTrue(subFrmae.Content is TPage, $"subFrame not containe {typeof(TPage).Name}");
             return subFrmae.Content as TPage;
         }
 
@@ -52,17 +52,21 @@ namespace GetcuReone.MvvmFrame.Wpf.TestAdapter
         /// Return given block 'Create and show <see cref="EmptyViewModel"/>'.
         /// </summary>
         /// <returns></returns>
-        protected GivenAsyncBlock<EmptyViewModel, EmptyViewModel> GivenShowEmptyPage()
+        protected GivenBlock<EmptyViewModel, EmptyViewModel> GivenShowEmptyPage()
         {
             return Given("Create view-model.", frame => ViewModelBase.CreateViewModel<EmptyViewModel>(frame))
                 .And("Navigate page.", viewModel =>
                 {
-                    SetupViewModel(viewModel);
                     var nResult = ViewModelBase.Navigate<EmptyPage>(viewModel);
                     Assert.IsTrue(nResult.IsNavigate, "Navigation failed.");
                     return viewModel;
                 })
-                .AndWait(100);
+                .AndWait(100)
+                .And("Setup view-model.", viewModel => 
+                {
+                    SetupViewModel(viewModel);
+                    return viewModel;
+                });
         }
     }
 }
