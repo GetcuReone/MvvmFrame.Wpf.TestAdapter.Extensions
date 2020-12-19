@@ -51,8 +51,9 @@ namespace GetcuReone.MvvmFrame.Wpf.TestAdapter
         /// <summary>
         /// Return given block 'Create and show <see cref="EmptyViewModel"/>'.
         /// </summary>
+        /// <param name="timeoutLoadPage">Page load timeout.</param>
         /// <returns></returns>
-        protected GivenBlock<EmptyViewModel, EmptyViewModel> GivenShowEmptyPage()
+        protected GivenBlock<EmptyViewModel, EmptyViewModel> GivenShowEmptyPage(int timeoutLoadPage = 500)
         {
             return Given("Create view-model.", frame => ViewModelBase.CreateViewModel<EmptyViewModel>(frame))
                 .And("Navigate page.", viewModel =>
@@ -61,7 +62,7 @@ namespace GetcuReone.MvvmFrame.Wpf.TestAdapter
                     Assert.IsTrue(nResult.IsNavigate, "Navigation failed.");
                     return viewModel;
                 })
-                .AndWait(100)
+                .AndWait(timeoutLoadPage)
                 .And("Setup view-model.", viewModel => 
                 {
                     SetupViewModel(viewModel);
