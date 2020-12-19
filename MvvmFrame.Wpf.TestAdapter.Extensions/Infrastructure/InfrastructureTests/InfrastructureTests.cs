@@ -30,7 +30,7 @@ namespace InfrastructureTests
         [Timeout(Timeouts.Minute.One)]
         public void NugetHaveNeedFilesTestCase()
         {
-            string nugetId = $"{_projectName}";
+            string nugetId = $"MvvmFrameWpf.TestAdapter.Extensions";
             string libPattern = $"lib/{TargetFramework}/" + "{0}";
             var files = new string[]
             {
