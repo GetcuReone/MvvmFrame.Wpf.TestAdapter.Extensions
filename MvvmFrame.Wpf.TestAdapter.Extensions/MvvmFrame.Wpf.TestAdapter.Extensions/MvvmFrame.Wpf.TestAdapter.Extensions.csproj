@@ -12,7 +12,10 @@
         <RepositoryUrl>https://github.com/GetcuReone/MvvmFrame.Wpf.TestAdapter.Extensions</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>getcureone combopatterns mvvm wpf mvvmwpf test</PackageTags>
-        <PackageReleaseNotes></PackageReleaseNotes>
+        <PackageReleaseNotes>
+        Changes:
+        - fix assembly version
+        </PackageReleaseNotes>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PackageProjectUrl>https://github.com/GetcuReone/MvvmFrame.Wpf.TestAdapter.Extensions</PackageProjectUrl>
         <Copyright>Copyright © 2020 $(Authors)</Copyright>
@@ -28,8 +31,8 @@
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>$(snkFilePath)</AssemblyOriginatorKeyFile>
         <DelaySign>false</DelaySign>
-        <AssemblyVersion>$(majorVersion).$(minorVersion).0.0</AssemblyVersion>
-        <FileVersion>$(majorVersion).$(minorVersion).0.0</FileVersion>
+        <AssemblyVersion>$(majorVersion).0.0.0</AssemblyVersion>
+        <FileVersion>$(majorVersion).0.0.0</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -49,7 +52,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="MvvmFrameWpf.TestAdapter" Version="[2.5.1,)" />
+        <PackageReference Include="MvvmFrameWpf.TestAdapter" Version="[2.5.2,)" />
     </ItemGroup>
 
     <ItemGroup>
