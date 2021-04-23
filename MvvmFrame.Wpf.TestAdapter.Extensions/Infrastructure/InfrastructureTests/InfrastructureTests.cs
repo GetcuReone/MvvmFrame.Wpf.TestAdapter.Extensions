@@ -31,7 +31,7 @@ namespace InfrastructureTests
         public void NugetHaveNeedFilesTestCase()
         {
             string nugetId = $"MvvmFrameWpf.TestAdapter.Extensions";
-            string libPattern = $"lib/{TargetFramework}/" + "{0}";
+            string libPattern = $"lib/{TargetFramework}/GetcuReone." + "{0}";
             var files = new string[]
             {
                 string.Format(libPattern, $"{_projectName}.dll"),
