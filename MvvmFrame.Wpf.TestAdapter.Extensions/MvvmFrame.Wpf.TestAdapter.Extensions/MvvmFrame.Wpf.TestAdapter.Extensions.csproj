@@ -1,11 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+    <Import Project="..\..\.buildTools\GetcuReone.Lib.props" />
+
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
-        <RootNamespace>GetcuReone.MvvmFrame.Wpf.TestAdapter</RootNamespace>
-        <DocumentationFile>MvvmFrame.Wpf.TestAdapter.Extensions.xml</DocumentationFile>
-
-        <Authors>Itua Juel-Gaben</Authors>
+        
         <PackageId>MvvmFrameWpf.TestAdapter.Extensions</PackageId>
         <Product>MvvmFrameWpf.TestAdapter.Extensions</Product>
         <Description>Extensions for MvvmFrameWpf.TestAdapter</Description>
@@ -14,7 +13,7 @@
         <PackageTags>getcureone combopatterns mvvm wpf mvvmwpf test</PackageTags>
         <PackageReleaseNotes>
         Changes:
-        - fix assembly version
+        - changed assembly name
         </PackageReleaseNotes>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PackageProjectUrl>https://github.com/GetcuReone/MvvmFrame.Wpf.TestAdapter.Extensions</PackageProjectUrl>
@@ -25,14 +24,6 @@
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-        <SignAssembly>true</SignAssembly>
-        <AssemblyOriginatorKeyFile>$(snkFilePath)</AssemblyOriginatorKeyFile>
-        <DelaySign>false</DelaySign>
-        <AssemblyVersion>$(majorVersion).0.0.0</AssemblyVersion>
-        <FileVersion>$(majorVersion).0.0.0</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
