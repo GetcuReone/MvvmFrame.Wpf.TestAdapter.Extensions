@@ -13,7 +13,7 @@
         <PackageTags>getcureone combopatterns mvvm wpf mvvmwpf test</PackageTags>
         <PackageReleaseNotes>
         Changes:
-        - changed assembly name
+        - fix reference version for MvvmFrameWpf
         </PackageReleaseNotes>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PackageProjectUrl>https://github.com/GetcuReone/MvvmFrame.Wpf.TestAdapter.Extensions</PackageProjectUrl>
@@ -43,7 +43,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="MvvmFrameWpf.TestAdapter" Version="[2.5.2,)" />
+        <PackageReference Include="MvvmFrameWpf.TestAdapter" Version="[3.0.0,)" />
     </ItemGroup>
 
     <ItemGroup>
